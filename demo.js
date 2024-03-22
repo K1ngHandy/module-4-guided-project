@@ -12,10 +12,38 @@ let a = [ 1, 2, 3, 4 ];
 //     console.log(next);
 // }
 
-// for (let x of a) { // for of loop
+// for (let x of a) { // for of loop, when index is not important
 //     console.log(x);
 // }
 
-for (let x in a) {
-    
-}
+// let obj = {name: 'Jacob', age: 31};
+
+// obj.age;
+// obj['age'];
+
+// const v = 'age';
+// obj[v]
+
+// for (let key in obj) { // for in loop, to loop over keys in objects
+//     console.log(key);
+//     console.log(obj['age']);
+// }
+
+// let target = 100;
+// let start = 4;
+
+// while (start < target) { // while [a condition is true] loop, for when a certain stop is necessary
+//     console.log(start);
+//     start += 10;
+// }
+// console.log(start);
+
+let menuOption;
+
+do { // do while loop - run logic at least once and possibly again after
+    console.log('pick 1 to run, or 0 to quit');
+    menuOption = 0;
+    if (menuOption !== 0) {
+        // something
+    }
+} while (menuOption === 1);
