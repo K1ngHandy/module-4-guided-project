@@ -75,11 +75,35 @@ let a = [ 1, 2, 3, 4 ];
 // let str7 = str.substr(2, 2);
 // console.log(`str1: ${str1}\nstr2: ${str2}\nstr3: ${str3}\nstr4: ${str4}\nstr5: ${str5}\nstr6: ${str6}\nstr7: ${str7}\n`);
 
-let str = 'This is a string as an example for this';
-let str1 = str.toUpperCase(); // toUppercase
-let str2 = str.toLowerCase(); // toLowercase
-let str3 = str.replace('this', 'hello'); // replace 1st instance of 'this'
-let str4 = str.replaceAll('this', 'hello'); // replace all instances of 'this'
-let index1 = str2.indexOf('this');
-let index2 = str2.lastIndexOf('this');
-console.log(`str1: ${str1}\nstr2: ${str2}\nstr3: ${str3}\nstr4: ${str4}\nindex1: ${index1}\nindex2: ${index2}\n`);
+// let str = 'This is a string as an example for this';
+// let str1 = str.toUpperCase(); // toUppercase
+// let str2 = str.toLowerCase(); // toLowercase
+// let str3 = str.replace('this', 'hello'); // replace 1st instance of 'this'
+// let str4 = str.replaceAll('this', 'hello'); // replace all instances of 'this'
+// let index1 = str2.indexOf('this');
+// let index2 = str2.lastIndexOf('this');
+// console.log(`str1: ${str1}\nstr2: ${str2}\nstr3: ${str3}\nstr4: ${str4}\nindex1: ${index1}\nindex2: ${index2}\n`);
+
+// let str1 = 'hello';
+// let str2 = 'something';
+// if (str1 < str2) { // letter sooner in alphabet is lower 
+//     console.log('the word hello comes before something in the dictionary because h is less than s');
+// }
+// let str3 = 'aA';
+// console.log(`char code a: ${str3.charCodeAt(0)}, char code A: ${str3.charCodeAt(1)}`);
+// console.log(str1.charAt(1)); // e
+
+let str = 'abcdefg';
+let str2 = 'abcfgh';
+function isInOrder(str) {
+    for (let i = 0; i < str.length - 1; i++) {
+        const current = str[i];
+        const next = str[i + 1];
+        if (current.charCodeAt(0) + 1 !== next.charCodeAt(0)) {
+            return false;
+        }
+    }
+    return true;
+}
+console.log(isInOrder(str)); // true
+console.log(isInOrder(str2)); // false
