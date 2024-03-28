@@ -1,4 +1,4 @@
-let a = [ 1, 2, 3, 4 ];
+// let a = [ 1, 2, 3, 4 ];
 
 // for (let i = 0; i < a.length; i++) { // loop through array length
 //     const current = a[i];
@@ -93,17 +93,24 @@ let a = [ 1, 2, 3, 4 ];
 // console.log(`char code a: ${str3.charCodeAt(0)}, char code A: ${str3.charCodeAt(1)}`);
 // console.log(str1.charAt(1)); // e
 
-let str = 'abcdefg';
-let str2 = 'abcfgh';
-function isInOrder(str) {
-    for (let i = 0; i < str.length - 1; i++) {
-        const current = str[i];
-        const next = str[i + 1];
-        if (current.charCodeAt(0) + 1 !== next.charCodeAt(0)) {
-            return false;
-        }
-    }
-    return true;
-}
-console.log(isInOrder(str)); // true
-console.log(isInOrder(str2)); // false
+// let str = 'abcdefg';
+// let str2 = 'abcfgh';
+// function isInOrder(str) {
+//     for (let i = 0; i < str.length - 1; i++) {
+//         const current = str[i];
+//         const next = str[i + 1];
+//         if (current.charCodeAt(0) + 1 !== next.charCodeAt(0)) {
+//             return false;
+//         }
+//     }
+//     return true;
+// }
+// console.log(isInOrder(str)); // true
+// console.log(isInOrder(str2)); // false
+
+// let a = [1, 2, 3, 4];
+// a.push(5); // push
+// console.log(a);
+
+const arr = [3, 5, 6, 8, 9];
+const lengthAfterPush = arr.push(11);
